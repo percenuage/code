@@ -1,3 +1,5 @@
+#!/bin/sh
+
 export do="--dry-run=client -o yaml"
 export now="--force --grace-period 0"
 alias kn='kubectl config set-context --current --namespace '
@@ -9,3 +11,5 @@ alias kdp='kubectl describe po'
 alias kdn='kubectl describe no'
 alias kaf='kubectl apply -f'
 alias kdf='kubectl delete -f'
+
+echo "Kubectl alias loaded."
